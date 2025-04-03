@@ -50,7 +50,7 @@ const Login = ({ setIsAuthenticated }) => {
       {step === 'login' ? (
         <form onSubmit={handleLogin} className="max-w-md mx-auto bg-white p-6 rounded shadow">
           <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
+            <label className="block text-gray-700">Correo</label>
             <input
               type="email"
               value={email}
@@ -60,7 +60,7 @@ const Login = ({ setIsAuthenticated }) => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Password</label>
+            <label className="block text-gray-700">Contraseña</label>
             <input
               type="password"
               value={password}

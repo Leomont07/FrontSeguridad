@@ -40,7 +40,7 @@ const Register = () => {
       )}
       <form onSubmit={handleRegister} className="max-w-md mx-auto bg-white p-6 rounded shadow">
         <div className="mb-4">
-          <label className="block text-gray-700">Email</label>
+          <label className="block text-gray-700">Correo</label>
           <input
             type="email"
             value={email}
@@ -60,7 +60,7 @@ const Register = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700">Password</label>
+          <label className="block text-gray-700">Contraseña</label>
           <input
             type="password"
             value={password}
@@ -70,7 +70,7 @@ const Register = () => {
           />
         </div>
         <div className="mb-4">
-            <label className="block text-gray-700">Degree</label>
+            <label className="block text-gray-700">Grado</label>
             <select
               value={grado}
               onChange={(e) => setGrado(e.target.value)}
@@ -82,7 +82,7 @@ const Register = () => {
             </select>
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Group</label>
+            <label className="block text-gray-700">Grupo</label>
             <input
               type="text"
               value={grupo}
@@ -92,7 +92,7 @@ const Register = () => {
             />
           </div>
         <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
-          Register
+          Regitrar
         </button>
       </form>
       <p className="text-center mt-4">
