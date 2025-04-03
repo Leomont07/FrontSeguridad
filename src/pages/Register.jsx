@@ -18,7 +18,7 @@ const Register = () => {
     try {
       const response = await axios.post(`${config.SERVER1}/register`, { email, username, password, grado, grupo });
       setSuccess('Registration successful! Scan the QR code with Google Authenticator.');
-      setQrCode(response.data.qrCode); // Set the QR code from the response
+      setQrCode(response.data.qrCode);
       setError('');
     } catch (err) {
       setError(err.response?.data?.message || 'Error during registration');
