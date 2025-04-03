@@ -115,14 +115,14 @@ const Logs = () => {
       ) : (
         <div className="space-y-8">
           <div className="bg-white p-6 rounded shadow">
-            <h2 className="text-2xl font-semibold mb-4">Log Levels Distribution</h2>
+            <h2 className="text-2xl font-semibold mb-4">Cantidad de Logs por servidor</h2>
             <Bar
               data={logLevelChartData}
               options={{ ...chartOptions, plugins: { ...chartOptions.plugins, title: { text: 'Log Levels' } } }}
             />
           </div>
           <div className="bg-white p-6 rounded shadow">
-            <h2 className="text-2xl font-semibold mb-4">Response Time Distribution</h2>
+            <h2 className="text-2xl font-semibold mb-4">Tiempo de Respuesta</h2>
             <Bar
               data={responseTimeChartData}
               options={{ ...chartOptions, plugins: { ...chartOptions.plugins, title: { text: 'Response Times' } } }}
