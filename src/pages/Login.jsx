@@ -32,7 +32,8 @@ const Login = ({ setIsAuthenticated }) => {
       console.log('peticion OTP enviada');
       localStorage.setItem('token', response.data.token);
       const tokenPayload = JSON.parse(atob(response.data.token.split('.')[1]));
-      localStorage.setItem('usarname', tokenPayload.username);
+      localStorage.setItem('username', tokenPayload.username);
+      console.log('usuario: ' + localStorage.getItem('username'))
       localStorage.setItem('grado', tokenPayload.grado);
       localStorage.setItem('grupo', tokenPayload.grupo);
       setIsAuthenticated(true);
@@ -90,9 +91,9 @@ const Login = ({ setIsAuthenticated }) => {
         </form>
       )}
       <p className="text-center mt-4">
-        Don't have an account?{' '}
+        No tienes una cuenta?{' '}
         <a href="/register" className="text-blue-500 hover:underline">
-          Register
+          Registrate
         </a>
       </p>
     </div>

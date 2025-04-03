@@ -111,7 +111,7 @@ const Logs = () => {
     <div className="container">
       <h1 className="text-3xl font-bold mb-6">Logs</h1>
       {loading ? (
-        <p className="text-center">Loading logs...</p>
+        <p className="text-center">Cargando los logs...</p>
       ) : (
         <div className="space-y-8">
           <div className="bg-white p-6 rounded shadow">

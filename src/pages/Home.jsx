@@ -28,21 +28,25 @@ const Home = ({ setIsAuthenticated }) => {
         </button>
       </div>
       <div className="bg-white p-6 rounded shadow">
-        <h2 className="text-2xl font-semibold mb-4">About the Application</h2>
+        <h2 className="text-2xl font-semibold mb-4">Acerca de la App</h2>
         <p className="mb-4">
-          This application is a REST API-based system with two servers: one with rate limiting (Server 1) and one without (Server 2). It allows users to register, log in with MFA (multi-factor authentication), and view logs of API requests. The logs are visualized in the Logs view with bar charts showing different log levels and other parameters.
+          Esta aplicación es un sistema basado en API REST con dos servidores: uno con limitación (Servidor 1) y otro sin él (Servidor 2). Permite a los usuarios registrarse, iniciar sesión con MFA y ver los registros de las solicitudes de API. Los registros se visualizan en la vista Logs con gráficos de barras que muestran diferentes niveles de registro y otros parámetros.
         </p>
-        <h3 className="text-xl font-semibold mb-2">Student Information</h3>
+        <h3 className="text-xl font-semibold mb-2">Información Usuario</h3>
         <p>
-          <strong>Name:</strong> {username} <br />
-          <strong>Degree:</strong> {grado} <br />
-          <strong>Group:</strong> {grupo}
+          <strong>Nombre:</strong> {username} <br />
+          <strong>Grado:</strong> {grado} <br />
+          <strong>Grupo:</strong> {grupo}
         </p>
-        <h3 className="text-xl font-semibold mt-4 mb-2">Teacher Information</h3>
+        <h3 className="text-xl font-semibold mb-2">Información Alumno</h3>
         <p>
-          <strong>Name:</strong> [Teacher's Full Name] <br />
-          <strong>Degree:</strong> [Teacher's Degree, e.g., PhD in Computer Science] <br />
-          <strong>Group:</strong> [Teacher's Group, if applicable]
+          <strong>Nombre:</strong> José Leonardo Montero Núñez <br />
+          <strong>Grado:</strong> TSU <br />
+          <strong>Grupo:</strong> IDGS11
+        </p>
+        <h3 className="text-xl font-semibold mt-4 mb-2">Información maestro</h3>
+        <p>
+          <strong>Nombre:</strong> Emmanuel Martínez Hernández <br />
         </p>
         <button
           onClick={() => navigate('/logs')}
